@@ -48,8 +48,18 @@ function calculateEllipseArea()
    const base=getInputValue('ellipse-major-rad');
   const length=getInputValue('ellipse-minor-rad');
   const area= 3.14*base*length;
+  const areaTwoDecimal=area.toFixed(2);
   getInnerText('ellipse-area',area);
-
+ 
+}
+function calculatePentagonArea()
+{
+   const base=getInputValue('pentagon-p');
+  const length=getInputValue('pentagon-b');
+  const area= 0.5*base*length;
+  const areaTwoDecimal=area.toFixed(2);
+  getInnerText('pentagon-area',area);
+ 
 }
 function calculateRhombusArea()
 {
